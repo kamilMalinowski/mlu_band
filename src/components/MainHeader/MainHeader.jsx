@@ -6,7 +6,7 @@ import "./MainHeader.scss";
 
 function MainHeader({state, onClick}) {
   return (
-    <div className="sticky">
+    <div className="fixed">
       <header className={`main-header ${state}`}>
         <div className="main-header__section">
           <a className="main-header__logo-link" href="">

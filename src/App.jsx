@@ -3,6 +3,7 @@ import { useState } from "react";
 import InfoSection from "./components/InfoSection/InfoSection";
 import MainHeader from "./components/MainHeader/MainHeader";
 import NavPopup from "./components/NavPopup/NavPopup";
+import HeroSection from "./components/HeroSection/HeroSection";
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,9 @@ function App() {
       <InfoSection />
       <MainHeader state={menuOpen ? "close" : "open"} onClick={toggleMenu}/>
       <NavPopup state={menuOpen ? "open" : "close"} onClick={toggleMenu}/>
+      <main>
+        <HeroSection/>
+      </main>
     </>
   );
 }

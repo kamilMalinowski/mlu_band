@@ -1,0 +1,64 @@
+.hero {
+  padding: 12.875rem 1.5rem 6rem;
+  min-height: calc(100vh - 7.5rem);
+  &__heading {
+    line-height: 3.0625rem;
+    font-size: 2.4375rem;
+    font-weight: var(--semibold);
+    color: var(--white);
+    margin-bottom: 0.875rem;
+    &--special {
+      color: var(--primary);
+    }
+  }
+
+  &__description {
+    color: var(--white-80);
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+  }
+  &__links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  &__link {
+    width: 100%;
+    height: 2.75rem;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--medium);
+    transition: var(--transition);
+    &--primary {
+      background-color: var(--primary);
+      color: var(--black);
+      &:hover {
+        background-color: var(--primary-hover);
+      }
+    }
+    &--secondary {
+      color: var(--white);
+      border: 1px solid var(--white-50);
+      &:hover {
+        color: var(--primary-hover);
+        border: 1px solid var(--primary-hover);
+      }
+    }
+  }
+
+  &__visuals {
+    width: 100%;
+    background-color: var(--primary);
+    height: 25rem;
+    border-radius: 100%;
+    opacity: 0.1;
+    filter: blur(2rem);
+  }
+}
+
+body {
+  height: 4000px;
+}

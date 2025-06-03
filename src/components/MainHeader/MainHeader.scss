@@ -1,17 +1,20 @@
-.sticky {
-  top: 0;
-  position: sticky;
+.fixed {
+  top: 4rem;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
   padding: 0.75rem 0.75rem 0;
 }
 
 .main-header {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   background-color: var(--grey);
   border-radius: var(--radius-full);
   transition: all 1s ease-in-out;
-    filter: blur(0);
+  filter: blur(0);
   &.close {
-         filter: blur(1rem);
-  transform: translateX(calc(-100% - .75rem));
+    filter: blur(1rem);
+    transform: translateX(calc(-100% - 0.75rem));
   }
   &__section {
     display: flex;
@@ -26,4 +29,3 @@
     align-items: center;
   }
 }
-
