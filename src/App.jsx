@@ -4,9 +4,10 @@ import InfoSection from "./components/InfoSection/InfoSection";
 import MainHeader from "./components/MainHeader/MainHeader";
 import NavPopup from "./components/NavPopup/NavPopup";
 import HeroSection from "./components/HeroSection/HeroSection";
+import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
 
 function App() {
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -20,10 +21,11 @@ function App() {
   return (
     <>
       <InfoSection />
-      <MainHeader state={menuOpen ? "close" : "open"} onClick={toggleMenu}/>
-      <NavPopup state={menuOpen ? "open" : "close"} onClick={toggleMenu}/>
+      <MainHeader state={menuOpen ? "close" : "open"} onClick={toggleMenu} />
+      <NavPopup state={menuOpen ? "open" : "close"} onClick={toggleMenu} />
       <main>
-        <HeroSection/>
+        <HeroSection />
+        <MusicPlayer />
       </main>
     </>
   );
