@@ -12,8 +12,8 @@
   margin: 0.75rem;
   background-color: var(--grey);
   gap: 1.5rem;
+  z-index: 99;
   &.open {
-    z-index: 1;
     transform: translateX(0);
     filter: blur(0);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
