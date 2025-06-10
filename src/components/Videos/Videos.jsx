@@ -47,7 +47,9 @@ function Videos() {
       <section className="videos__list">
         {VideosArr.map((video) => (
           <article key={video.title} className="video">
-            <div className="video__preview"></div>
+            <div className="video__preview">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SzYiiN7GNJc?si=8lKPkNGqXKG2uW2n" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div className="video__content">
               <div className="video__icon-wrapper">{video.icon}</div>
               <section className="video__section">
