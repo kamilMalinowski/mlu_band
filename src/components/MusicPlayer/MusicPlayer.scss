@@ -61,25 +61,5 @@
     border-radius: 0 var(--radius-full) var(--radius-full) 0;
     background-color: var(--primary);
   }
-  &__play-btn {
-    flex-shrink: 0;
-    padding: 0;
-    width: 5.5rem;
-    border-radius: var(--radius-full);
-    background-color: var(--primary);
-    font-size: 1rem;
-    border: none;
-    height: 2.75rem;
-    font-weight: var(--medium);
-    transition: var(--transition);
-    &:hover {
-      background-color: var(--primary-hover);
-    }
-    &--temporary {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 2.75rem;
-    }
-  }
+
 }

@@ -1,15 +1,15 @@
 import MenuBtn from "../ui/MenuBtn/MenuBtn";
 
 import Logo from "../../assets/icons/logo.svg?react";
-import FbIcon from "../../assets/icons/fb.svg?react";
-import YTIcon from "../../assets/icons/yt.svg?react";
-import BioIcon from "../../assets/icons/bio.svg?react";
-import MusicIcon from "../../assets/icons/music.svg?react";
-import StoreIcon from "../../assets/icons/store.svg?react";
-import VideosIcon from "../../assets/icons/videos.svg?react";
-import ContactIcon from "../../assets/icons/contact.svg?react";
-import SpotifyIcon from "../../assets/icons/spotify.svg?react";
-import InstagramIcon from "../../assets/icons/instagram.svg?react";
+import IconFb from "../../assets/icons/fb.svg?react";
+import IconYT from "../../assets/icons/yt.svg?react";
+import IconBio from "../../assets/icons/bio.svg?react";
+import IconMusic from "../../assets/icons/music.svg?react";
+import IconStore from "../../assets/icons/store.svg?react";
+import IconVideo from "../../assets/icons/videos.svg?react";
+import IconContact from "../../assets/icons/contact.svg?react";
+import IconSpotify from "../../assets/icons/spotify.svg?react";
+import IconInst from "../../assets/icons/instagram.svg?react";
 
 import "./NavPopup.scss";
 
@@ -23,38 +23,38 @@ function NavPopup({state, onClick}) {
         </a>
         <a className="nav__link" href="">
           <span className="nav__link-text">Music</span>
-          <MusicIcon />
+          <IconMusic />
         </a>
         <a className="nav__link" href="">
           <span className="nav__link-text">Videos</span>
-          <VideosIcon />
+          <IconVideo />
         </a>
         <a className="nav__link" href="">
           <span className="nav__link-text">Store</span>
-          <StoreIcon />
+          <IconStore />
         </a>
         <a className="nav__link" href="">
           <span className="nav__link-text">Bio</span>
-          <BioIcon />
+          <IconBio />
         </a>
         <a className="nav__link" href="">
           <span className="nav__link-text">Contact</span>
-          <ContactIcon />
+          <IconContact />
         </a>
       </nav>
 
       <section className="nav__socialmedia">
         <a className="nav__socialmedia-link" href="">
-          <FbIcon />
+          <IconFb />
         </a>
         <a className="nav__socialmedia-link" href="">
-          <YTIcon />
+          <IconYT />
         </a>
         <a className="nav__socialmedia-link" href="">
-          <InstagramIcon />
+          <IconInst />
         </a>
         <a className="nav__socialmedia-link" href="">
-          <SpotifyIcon />
+          <IconSpotify />
         </a>
       </section>
     </section>

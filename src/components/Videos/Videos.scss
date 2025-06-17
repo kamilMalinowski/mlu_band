@@ -14,27 +14,16 @@
   &__description {
     margin-inline: auto;
     line-height: 1.5rem;
-    max-width: 80%;
+    max-width: 90%;
     margin-bottom: 1.5rem;
     font-size: 1rem;
     color: var(--white-80);
     text-align: center;
     padding: 0 1.5rem;
   }
-  &__btn {
-    font-size: 1rem;
-    font-weight: var(--medium);
-    margin-inline: auto;
-    background-color: var(--primary);
-    border: none;
-    border-radius: var(--radius-full);
-    height: 2.75rem;
-    display: flex;
-    align-items: center;
-    padding: 0 0.125rem 0 1.75rem;
-    margin-bottom: 4rem;
-  }
-  &__list {
+  &__buttons{
+    width: max-content;
+    margin: 0 auto 2rem auto ;
   }
 }
 .video {
@@ -58,8 +47,6 @@
     align-items: center;
     justify-content: center;
   }
-  &__section {
-  }
   &__title {
     color: var(--white);
     margin-bottom: 1rem;
@@ -73,7 +60,6 @@
     z-index: -1;
     position: absolute;
     color: var(--grey);
-
     &--first {
       top: -3rem;
       left: -2rem;
