@@ -6,6 +6,7 @@ import NavPopup from "./components/NavPopup/NavPopup";
 import HeroSection from "./components/HeroSection/HeroSection";
 import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
 import Videos from "./components/Videos/Videos";
+import BioSection from "./components/BioSection/BioSection";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <HeroSection />
         <MusicPlayer />
         <Videos/>
+        <BioSection/>
       </main>
     </>
   );

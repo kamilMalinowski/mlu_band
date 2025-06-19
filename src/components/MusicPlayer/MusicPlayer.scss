@@ -30,6 +30,7 @@
     margin-bottom: 1rem;
   }
   &__subtitle {
+    font-size: 1.125rem;
     font-weight: var(--medium);
     color: var(--white-80);
     margin-bottom: 2rem;
@@ -61,5 +62,4 @@
     border-radius: 0 var(--radius-full) var(--radius-full) 0;
     background-color: var(--primary);
   }
-
 }
