@@ -1,13 +1,104 @@
-.bio{
-    padding: 1.5rem;
-    color: var(--white);
+.bio {
+  padding: 1.5rem;
+  color: var(--white);
 
-    &__image{  width: 100%;}
-&__section{}
-&__title{}
-&__subtitle{}
-&__description{}
-&__buttons{
-    margin: 0 auto;
-}
+  &__image-wrapper {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+    display: grid;
+    &::before {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(transparent 60%, var(--black));
+      pointer-events: none;
+    }
+    &:hover {
+      & img:nth-child(2) {
+        transform: rotate(1deg) scale(1.1);
+      }
+    }
+  }
+  &__image {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    width: 100%;
+
+    transition: var(--transition);
+
+    &--first {
+      background: radial-gradient(
+          circle,
+          transparent 20%,
+          var(--primary) 20%,
+          var(--primary) 80%,
+          transparent 80%,
+          transparent
+        ),
+        radial-gradient(
+            circle,
+            transparent 20%,
+            var(--primary) 20%,
+            var(--primary) 80%,
+            transparent 80%,
+            transparent
+          )
+          25px 25px,
+        linear-gradient(var(--black) 2px, transparent 2px) 0 -1px,
+        linear-gradient(90deg, var(--black) 2px, var(--primary) 2px) -1px 0;
+      background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    }
+    &--third {
+      z-index: 1;
+    }
+  }
+  &__section {
+    display: grid;
+  }
+  &__title {
+    font-size: 3rem;
+  }
+  &__title-letter {
+    display: inline-block;
+    transition: var(--transition);
+    &:hover {
+      animation: spinLetter 0.2s ease-in-out alternate infinite;
+    }
+    &--6{
+      display: inline;
+    }
+    @keyframes spinLetter {
+      0% {
+        color: var(--primary);
+        transform: rotateY(45deg);
+      }
+    }
+  }
+  &__title-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  &__subtitle {
+    font-size: 1.125rem;
+    color: var(--white-50);
+    margin-bottom: 1rem;
+  }
+  &__description {
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    color: var(--white-80);
+  }
+  &__buttons {
+    width: max-content;
+  }
 }
